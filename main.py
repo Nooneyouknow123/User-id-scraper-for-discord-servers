@@ -3,9 +3,10 @@ import os
 import sys
 import time
 import asyncio
-import discord
+import discord 
 import sqlite3
 import logging
+import discord
 from discord.ext import commands
 from dotenv import load_dotenv
 from datetime import datetime
@@ -174,7 +175,7 @@ def atomic_add_user_and_maybe_log(user, guild, action: str):
                 pass
 
 # ---------------- Discord Bot ----------------
-bot = commands.Bot(command_prefix="!", self_bot=True)
+bot = commands.Bot(command_prefix="!",self_bot=True)
 
 # ---------------- Heartbeat (only while scanning_active True) ----------------
 async def heartbeat():
@@ -439,7 +440,7 @@ def search_menu():
         elif c == "4":
             try:
                 seen = set()
-                dupes = []
+                dupes = [] 
                 with open(LOG_FILE, "r", encoding="utf-8") as f:
                     for line in f:
                         if "(" in line and ")" in line:
@@ -529,3 +530,4 @@ if __name__ == "__main__":
             conn.close()
         except Exception:
             pass
+
