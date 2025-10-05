@@ -1,6 +1,7 @@
 # Discord Member Logger
 
 > A single-file Discord user tracking script with persistent storage, checkpointed history scanning, live logging, and built-in tools for searching, deduplication, and maintenance.
+> Your self-bot account has to be in targetted server(s).
 
 ---
 
