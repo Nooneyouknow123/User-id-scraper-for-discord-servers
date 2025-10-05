@@ -199,7 +199,7 @@ This is explained here only for technical completeness.
 
 1. Open Discord in your browser (desktop app doesn’t work).
 2. Press **F12** or **Ctrl+Shift+I** to open Developer Tools.
-3. Go to the **Application / Storage** tab.
+3. Go to the **Application / Storage** tab. Make sure you make some activity by doing a click or hovering your mouse arrow on something.
 4. Expand **Local Storage** → select `https://discord.com`.
 5. Look for the entry called **token**.
 6. Copy its value — this is your account token.
